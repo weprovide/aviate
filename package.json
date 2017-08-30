@@ -1,6 +1,6 @@
 {
   "name": "aviate",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "dependencies": {
     "copy-dir": "^0.3.0",
     "css-loader": "^0.28.4",
@@ -15,7 +15,7 @@
     "rimraf": "^2.6.1",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.18.2",
-    "webpack": "^3.3.0",
+    "webpack": "^3.5.5",
     "webpack-dev-server": "^2.6.0",
     "webpack-format-messages": "^1.0.0"
   },
