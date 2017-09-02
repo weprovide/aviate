@@ -4,13 +4,9 @@ machine:
 
 dependencies:
   pre:
-    - npm install -g yarn
-    - yarn config set cache-folder ~/.yarn-cache
     - echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
-  cache_directories:
-    - ~/.yarn-cache
   override:
-    - yarn
+    - echo "done"
   
 test:
   override:
