@@ -11,6 +11,10 @@ dependencies:
     - ~/.yarn-cache
   override:
     - yarn
+  
+test:
+  override:
+    - echo "done"
 
 deployment:
   npm:
