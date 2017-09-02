@@ -1,6 +1,6 @@
 # Aviate
 
-Small webpack based scss / javascript compiler
+Small WebPack based SCSS / Javascript compiler
 
 ## Installation
 
