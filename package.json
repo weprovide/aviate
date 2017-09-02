@@ -61,8 +61,7 @@
     "webpack-format-messages": "^1.0.0"
   },
   "bin": {
-    "aviate": "./cli.js",
-    "wepack": "./cli.js"
+    "aviate": "./cli.js"
   },
   "devDependencies": {
     "eslint-config-prettier": "^2.3.0",
