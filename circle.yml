@@ -18,6 +18,8 @@ test:
 
 deployment:
   npm:
+    branch: master
     tag: /.*/
+    owner: timneutkens
     commands:
       - npm publish
