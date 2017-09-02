@@ -1,0 +1,12 @@
+machine:
+  node:
+    version: 8.2
+
+dependencies:
+  pre:
+    - npm install -g yarn
+    - yarn config set cache-folder ~/.yarn-cache
+  cache_directories:
+    - ~/.yarn-cache
+  override:
+    - yarn
