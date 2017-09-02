@@ -19,5 +19,5 @@ test:
 deployment:
   npm:
     tag: /.*/
-      commands:
-        - npm publish
+    commands:
+      - npm publish
