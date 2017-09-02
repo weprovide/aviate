@@ -12,11 +12,14 @@ npm install --save aviate
 
 Open `package.json` and add:
 
-```
-"scripts": {
-    "dev": "aviate",
-    "build": "aviate build"
+```js
+{
+    "scripts": {
+        "dev": "aviate",
+        "build": "aviate build"
+    }
 }
+
 ```
 
 Create the `aviate.config.js`
