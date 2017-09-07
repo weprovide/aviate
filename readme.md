@@ -34,7 +34,7 @@ const path = require('path')
 module.exports = {
     // Defaults to http://localhost:9000 when not provided
     host: 'http://localhost:9000/',
-    // Location to copy production assets to
+    // Location to copy production assets to (usually one directory)
     distLocations: [
         path.join(__dirname, 'your/production/assets/directory')
     ],
@@ -72,6 +72,7 @@ module.exports = {
 These plugins are included by default:
 
 - [Autoprefixer](https://github.com/postcss/autoprefixer) (last 2 versions and Internet Explorer 11)
+- [Font size responsive](https://github.com/seaneking/postcss-responsive-type) Allows you to easily create responsive types 
 - [Lost Grid](http://lostgrid.org) Amazing grid system
 - [Custom Media](https://github.com/postcss/postcss-custom-media) W3C compliant custom media queries
 - [z-index](https://github.com/ben-eb/postcss-zindex) flattens z-index levels
