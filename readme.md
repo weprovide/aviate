@@ -42,10 +42,10 @@ module.exports = {
     // This example shows how to add css-mqpacker
     // Default plugins are outlined below
     postCss(loader, defaultPlugins) {
-        const defaultPlugins = defaultPlugins()
-        defaultPlugins.push(require('css-mqpacker')())
+        const plugins = defaultPlugins()
+        plugins.push(require('css-mqpacker')())
 
-        return defaultPlugins
+        return plugins
     },
     // Allows you to define custom WebPack properties
     // `config` is a WebPack config object
