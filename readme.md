@@ -38,6 +38,8 @@ module.exports = {
     distLocations: [
         path.join(__dirname, 'your/production/assets/directory')
     ],
+    // Optional location of svgs to create a SVG sprite map. Can also be an object with configuration options for https://github.com/freshheads/svg-spritemap-webpack-plugin
+    svgSprite: '**/*.svg',
     // Entirely optional if you don't have any custom postcss plugins
     // This example shows how to add css-mqpacker
     // Default plugins are outlined below
