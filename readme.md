@@ -49,6 +49,19 @@ module.exports = {
 
         return plugins
     },
+    // Optional possibility to disable default postCSS plugins
+    postCss(loader, defaultPlugins) {
+        const plugins = defaultPlugins({
+            'autoprefixer': false,
+            'lost': false,
+            'postcss-custom-media': false,
+            'postcss-zindex': false,
+            'postcss-discard-duplicates': false,
+            'postcss-unique-selectors': false,
+            'postcss-responsive-type': false
+        })
+        return plugins
+    }
     // Allows you to define custom WebPack properties
     // `config` is a WebPack config object
     // `config.entry` is required
