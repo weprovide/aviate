@@ -32,8 +32,8 @@ Aviate is configured using the `aviate.config.js` file at the root of your proje
 const path = require('path')
 
 module.exports = {
-    // Defaults to http://localhost:9000 when not provided
-    host: 'http://localhost:9000/',
+    // Defaults to http://localhost:8080 when not provided
+    host: 'http://localhost:8080/',
     // Location to copy production assets to (usually one directory)
     distLocations: [
         path.join(__dirname, 'your/production/assets/directory')
@@ -61,6 +61,8 @@ module.exports = {
     // Allows you to define custom WebPack properties
     // `config` is a WebPack config object
     // `config.entry` is required
+    // Entries will be compiled to `http://localhost:8080/<entrykey>` in development
+    // In production the entries will be copied to `distLocations`
     decorateConfig(config) {
         config.entry = Object.assign({}, config.entry, {
             // When using scss that never changes (external dependencies) should be added to the array to greatly improve compilation time
