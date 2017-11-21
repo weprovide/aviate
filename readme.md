@@ -42,24 +42,20 @@ module.exports = {
     svgSprite: '**/*.svg',
     // Entirely optional if you don't have any custom postcss plugins
     // This example shows how to add css-mqpacker
-    // Default plugins are outlined below
     postCss(loader, defaultPlugins) {
-        const plugins = defaultPlugins()
+        // Optional possibility to disable default postCSS plugins        
+        const plugins = defaultPlugins({
+            // 'autoprefixer': true,
+            // 'lost': true,
+            // 'postcss-custom-media': true,
+            // 'postcss-zindex': true,
+            // 'postcss-discard-duplicates': true,
+            // 'postcss-unique-selectors': true,
+            // 'postcss-responsive-type': true
+        })
+
         plugins.push(require('css-mqpacker')())
 
-        return plugins
-    },
-    // Optional possibility to disable default postCSS plugins
-    postCss(loader, defaultPlugins) {
-        const plugins = defaultPlugins({
-            'autoprefixer': false,
-            'lost': false,
-            'postcss-custom-media': false,
-            'postcss-zindex': false,
-            'postcss-discard-duplicates': false,
-            'postcss-unique-selectors': false,
-            'postcss-responsive-type': false
-        })
         return plugins
     }
     // Allows you to define custom WebPack properties
@@ -71,7 +67,7 @@ module.exports = {
             'styles': [
                 path.join(__dirname, 'web/app/themes/wecustom/assets/styles/main.scss')
             ],
-            // All javascript goes through Babel. So you can write es2015 (ES6) code. It also includes all requirements for compiling React
+            // All javascript goes through Babel. So you can write es2015 (ES6) code. It also includes all requirements for compiling React applications
             'javascript': [
                 path.join(__dirname, 'web/app/themes/wecustom/assets/javascript/main.js')
             ],
