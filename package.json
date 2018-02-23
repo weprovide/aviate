@@ -39,7 +39,6 @@
     "copy-dir": "^0.3.0",
     "css-loader": "^0.28.10",
     "extract-text-webpack-plugin": "^3.0.0",
-    "extracted-loader": "^1.0.6",
     "file-loader": "^0.11.2",
     "find-up": "^2.1.0",
     "loglevel": "^1.4.1",
